@@ -24,85 +24,416 @@
             以下為常見的射精功能障礙簡要說明。
         </p>
 
-        <!-- 桌面版表格 (在小於sm螢幕時隱藏) -->
-        <div class="hidden sm:block overflow-x-auto rounded-lg shadow mb-8">
-            <table class="w-full text-sm sm:text-base border-collapse">
-                <thead>
-                    <tr class="bg-gray-300">
-                        <th class="py-3 px-4 border">項目</th>
-                        <th class="py-3 px-4 border">早洩 (PE)</th>
-                        <th class="py-3 px-4 border">遲洩 (DE)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="bg-white">
-                        <td class="py-3 px-4 border font-bold bg-sky-200">盛行率</td>
-                        <td class="py-3 px-4 border">全球盛行率約20-30%，台灣研究約13-17%。</td>
-                        <td class="py-3 px-4 border">全球盛行率約1-4%。</td>
-                    </tr>
-                    <tr class="bg-white">
-                        <td class="py-3 px-4 border font-bold bg-emerald-200">定義</td>
-                        <td class="py-3 px-4 border">持續或反覆於陰道插入後短時間（通常 ≤1 分鐘）即射精，且無法控制，伴隨困擾。</td>
-                        <td class="py-3 px-4 border">持續或反覆需長時間性刺激（>20–25 分鐘）或甚至無法在性行為中射精，伴隨困擾。</td>
-                    </tr>
-                    <tr class="bg-white">
-                        <td class="py-3 px-4 border font-bold bg-amber-200">主要原因</td>
-                        <td class="py-3 px-4 border">心理因素、神經敏感性增加、血清素相關神經傳導異常、前列腺炎等。</td>
-                        <td class="py-3 px-4 border">心理因素、藥物（SSRI）、內分泌異常（低睪固酮）、神經病變等。</td>
-                    </tr>
-                    <tr class="bg-white">
-                        <td class="py-3 px-4 border font-bold bg-indigo-200">治療</td>
-                        <td class="py-3 px-4 border">行為治療（start-stop）、心理治療、局部麻醉劑、口服藥（SSRI、達泊西丁）。</td>
-                        <td class="py-3 px-4 border">停用致病藥物、心理治療、增加刺激、藥物、治療原發疾病。</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!-- 行動版卡片式表格 (在sm螢幕時隱藏) -->
-        <div class="sm:hidden mb-8 space-y-4">
+        <!-- 統一的自適應卡片式表格 -->
+        <div class="mb-8 space-y-4">
             <!-- 盛行率卡片 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
                 <div class="p-3 font-bold text-gray-700 bg-sky-200">盛行率</div>
-                <div class="p-3 border-b">
-                    <p class="font-semibold text-sky-600 mb-1">早洩 (PE)</p>
-                    <p class="text-gray-600">全球盛行率約20-30%，台灣研究約13-17%。</p>
-                </div>
-                <div class="p-3">
-                    <p class="font-semibold text-emerald-600 mb-1">遲洩 (DE)</p>
-                    <p class="text-gray-600">全球盛行率約1-4%。</p>
+                <div class="flex flex-col sm:flex-row divide-y sm:divide-y-0 sm:divide-x divide-gray-200">
+                    <div class="p-3 flex-1">
+                        <p class="font-semibold text-sky-600 mb-1">早洩 (PE)</p>
+                        <p class="text-gray-600">全球盛行率約20-30%，台灣研究約13-17%。</p>
+                    </div>
+                    <div class="p-3 flex-1">
+                        <p class="font-semibold text-emerald-600 mb-1">遲洩 (DE)</p>
+                        <p class="text-gray-600">全球盛行率約1-4%。</p>
+                    </div>
                 </div>
             </div>
             <!-- 定義卡片 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
                 <div class="p-3 font-bold text-gray-700 bg-emerald-200">定義</div>
-                <div class="p-3 border-b">
-                    <p class="font-semibold text-sky-600 mb-1">早洩 (PE)</p>
-                    <p class="text-gray-600">持續或反覆於陰道插入後短時間（通常 ≤1 分鐘）即射精，且無法控制，伴隨困擾或人際壓力。</p>
-                </div>
-                <div class="p-3">
-                    <p class="font-semibold text-emerald-600 mb-1">遲洩 (DE)</p>
-                    <p class="text-gray-600">持續或反覆需長時間性刺激（>20–25 分鐘）或甚至無法在性行為中射精，伴隨困擾或人際壓力。</p>
+                <div class="flex flex-col sm:flex-row divide-y sm:divide-y-0 sm:divide-x divide-gray-200">
+                    <div class="p-3 flex-1">
+                        <p class="font-semibold text-sky-600 mb-1">早洩 (PE)</p>
+                        <p class="text-gray-600">持續或反覆於陰道插入後短時間（通常 ≤1 分鐘）即射精，且無法控制，伴隨困擾或人際壓力。</p>
+                    </div>
+                    <div class="p-3 flex-1">
+                        <p class="font-semibold text-emerald-600 mb-1">遲洩 (DE)</p>
+                        <p class="text-gray-600">持續或反覆需長時間性刺激（>20–25 分鐘）或甚至無法在性行為中射精，伴隨困擾或人際壓力。</p>
+                    </div>
                 </div>
             </div>
             <!-- 主要原因卡片 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
                 <div class="p-3 font-bold text-gray-700 bg-amber-200">主要原因</div>
-                <div class="p-3 border-b">
-                    <p class="font-semibold text-sky-600 mb-1">早洩 (PE)</p>
-                    <p class="text-gray-600">心理因素、神經敏感性增加、5-HT 相關神經傳導異常、甲狀腺功能亢進、前列腺炎等。</p>
-                </div>
-                <div class="p-3">
-                    <p class="font-semibold text-emerald-600 mb-1">遲洩 (DE)</p>
-                    <p class="text-gray-600">心理因素、藥物（SSRI）、內分泌異常（低睪固酮）、神經病變等。</p>
+                <div class="flex flex-col sm:flex-row divide-y sm:divide-y-0 sm:divide-x divide-gray-200">
+                    <div class="p-3 flex-1">
+                        <p class="font-semibold text-sky-600 mb-1">早洩 (PE)</p>
+                        <p class="text-gray-600">心理因素、神經敏感性增加、5-HT 相關神經傳導異常、甲狀腺功能亢進、前列腺炎等。</p>
+                    </div>
+                    <div class="p-3 flex-1">
+                        <p class="font-semibold text-emerald-600 mb-1">遲洩 (DE)</p>
+                        <p class="text-gray-600">心理因素、藥物（SSRI）、內分泌異常（低睪固酮）、神經病變等。</p>
+                    </div>
                 </div>
             </div>
             <!-- 治療卡片 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
                 <div class="p-3 font-bold text-gray-700 bg-indigo-200">治療</div>
-                <div class="p-3 border-b">
-                    <p class="font-semibold text-sky-600 mb-1">早洩 (PE)</p>
-                    <p class="text-gray-600">行為治療（start-stop、squeeze）、心理治療、局部麻醉劑、藥物（SSRI、達泊西丁）。</p>
+                <div class="flex flex-col sm:flex-row divide-y sm:divide-y-0 sm:divide-x divide-gray-200">
+                    <div class="p-3 flex-1">
+                        <p class="font-semibold text-sky-600 mb-1">早洩 (PE)</p>
+                        <p class="text-gray-600">行為治療（start-stop、squeeze）、心理治療、局部麻醉劑、口服藥（SSRI、達泊西丁）。</p>
+                    </div>
+                    <div class="p-3 flex-1">
+                        <p class="font-semibold text-emerald-600 mb-1">遲洩 (DE)</p>
+                        <p class="text-gray-600">停用致病藥物、心理治療、增加刺激強度、藥物、治療原發疾病。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 按鈕容器 -->
+        <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+            <button id="pe-button" class="flex-1 bg-sky-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-sky-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2">
+                早洩 (Premature Ejaculation)
+            </button>
+            <button id="de-button" class="flex-1 bg-emerald-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-emerald-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+                遲洩 (Delayed Ejaculation)
+            </button>
+            <button id="prevalence-button" class="flex-1 bg-purple-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-purple-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
+                盛行率概況
+            </button>
+        </div>
+
+        <!-- 資訊顯示區域 -->
+        <div id="info-box" class="hidden p-6 rounded-lg text-left shadow-inner border-l-4 border-gray-200">
+            <h2 id="info-title" class="text-2xl font-bold text-gray-700 mb-4"></h2>
+            <div id="info-content" class="text-gray-600 space-y-6"></div>
+        </div>
+    </div>
+
+    <script>
+        // DOM 元素選取
+        const peButton = document.getElementById('pe-button');
+        const deButton = document.getElementById('de-button');
+        const prevalenceButton = document.getElementById('prevalence-button');
+        const infoBox = document.getElementById('info-box');
+        const infoTitle = document.getElementById('info-title');
+        const infoContent = document.getElementById('info-content');
+
+        // 定義早洩、遲洩、盛行率和達泊西丁的詳細內容
+        const content = {
+            pe: {
+                title: '早洩（premature ejaculation, PE）',
+                sections: [
+                    {
+                        heading: '1. 行為與心理治療',
+                        paragraphs: [
+                            '📌 **性行為技巧訓練**',
+                            '- **Start-stop technique（開始－停止法）**：在接近射精感時停止動作，待衝動減弱後再繼續。',
+                            '- **Squeeze technique（擠壓法）**：射精感來時輕壓陰莖冠狀溝部位，延遲射精。',
+                            '📌 **心理輔導**',
+                            '若伴隨焦慮、壓力、伴侶溝通不良，可配合性治療師或心理諮商。伴侶教育可減少「表現焦慮」與不必要的心理壓力。'
+                        ]
+                    },
+                    {
+                        heading: '2. 藥物治療',
+                        paragraphs: [
+                            '**> 用藥須由醫師評估，以下為常見選項**',
+                            '📌 **抗憂鬱藥物（SSRIs）**— 延遲射精副作用被用來治療 PE',
+                            '- Paroxetine（帕羅西汀）',
+                            '- Sertraline（舍曲林）',
+                            '- Fluoxetine（氟西汀）',
+                            'Dapoxetine（達泊西丁） — 唯一核准專治 PE 的口服藥（短效，需於性行為前1-3小時服用）'
+                        ],
+                        // 新增一個按鈕，用來展開達泊西丁的詳細資訊
+                        button: {
+                            text: '了解更多',
+                            id: 'dapoxetine-more-info'
+                        }
+                    },
+                    {
+                        heading: '3. 生活方式與伴侶互動',
+                        paragraphs: [
+                            '- 避免過度疲勞、焦慮與酗酒',
+                            '- 加強骨盆底肌訓練（如 Kegel 運動）',
+                            '- 與伴侶建立開放、互信的性溝通模式'
+                        ]
+                    },
+                    {
+                        heading: '💡 臨床要點',
+                        paragraphs: [
+                            '- 若同時有 勃起功能障礙（ED），需先治療 ED。',
+                            '- 先天性早洩（終生型）與後天型的治療策略可能不同，需先鑑別。',
+                            '- 治療效果通常需數週至數月，需耐心並與伴侶協作。'
+                        ]
+                    }
+                ],
+                // 達泊西丁的詳細資訊，獨立於 sections 之外
+                dapoxetineSection: {
+                    heading: '達泊西丁（Dapoxetine）',
+                    paragraphs: [
+                        '📌 **商品名**：Priligy (必利勁)',
+                        '📌 **作用**：短效型選擇性血清素再吸收抑制劑 (SSRI)，作用於中樞神經。',
+                        '📌 **效果**：藉由抑制血清素再吸收，延長射精反射，並延長陰道內射精潛伏時間 (IELT)。',
+                        '📌 **服用方法**：建議於性行為前 1-3 小時服用。一天不可服用超過一次。'
+                    ],
+                    subSections: [
+                        {
+                            heading: '藥物特色',
+                            paragraphs: [
+                                '- 服用後約 2-3 小時達血中濃度高峰，半衰期短，不易在體內累積。',
+                                '- 因此，相較於其他長效 SSRI，其停藥後戒斷症狀和性功能相關副作用（如性慾減退、勃起功能障礙）的發生率較低。',
+                                '- **副作用**：常見頭暈、頭痛、噁心、腹瀉、口乾、疲勞、失眠等。',
+                                '- **禁忌症**：中重度肝功能不全、有不穩定心臟病史、嚴重心律不整或心衰竭、正在服用MAOIs或某些CYP3A4抑制劑者。'
+                            ]
+                        },
+                        {
+                            heading: '作用機轉',
+                            paragraphs: [
+                                '射精反射主要由交感神經系統和脊髓中的射精中樞控制。達泊西丁藉由調節中樞神經系統中血清素神經傳導，來**降低射精中樞的敏感度**，進而提高射精閾值，達到延遲射精的效果。'
+                            ]
+                        },
+                        {
+                            heading: '藥物圖片參考',
+                            paragraphs: [
+                                '以下圖片僅供參考，實際藥品包裝及外觀可能有所不同。'
+                            ],
+                            images: [
+                                { url: 'https://i.postimg.cc/xCgjcjS5/Screenshot-20250810-112359-Photos.jpg', alt: '達泊西丁藥物外觀與包裝' },
+                                { url: 'https://i.postimg.cc/4ydftCfg/Screenshot-20250810-112504-Photos.jpg', alt: '達泊西丁藥物劑量與服用說明' }
+                            ]
+                        }
+                    ]
+                }
+            },
+            de: {
+                title: '延遲射精（Delayed Ejaculation, DE）',
+                sections: [
+                    {
+                        heading: '1. 先找出原因',
+                        paragraphs: [
+                            '治療前需進行詳細的病史與身體檢查，以找出潛在病因：',
+                            '- **病史與檢查**：詢問性史、藥物使用、心理壓力、伴侶關係狀況、內分泌或神經系統疾病史。',
+                            '常見可逆原因：',
+                            '- **抗憂鬱藥**（特別是 SSRI）',
+                            '- **酒精過量**',
+                            '- **糖尿病**、甲狀腺功能低下、睪固酮缺乏',
+                            '- **脊髓損傷**、神經病變'
+                        ]
+                    },
+                    {
+                        heading: '2. 心理與性治療',
+                        paragraphs: [
+                            '性治療（Sex Therapy）：',
+                            '- 教導伴侶間的性溝通技巧',
+                            '- 改變性愛節奏、減少過度集中於射精目標的焦慮',
+                            '- 使用刺激強度漸進法（start–stop 或 squeeze 技術）',
+                            '心理治療：針對焦慮、憂鬱、強迫症等相關問題。'
+                        ]
+                    },
+                    {
+                        heading: '3. 藥物調整',
+                        paragraphs: [
+                            '- 減量或更換引起延遲射精的藥物（特別是抗憂鬱藥）。',
+                            '若必須持續使用 SSRI，可考慮：',
+                            '- 併用 **Bupropion**（安非他酮）',
+                            '- 併用 Amantadine 或 Cyproheptadine（有時能改善症狀）',
+                            '- 在睪固酮缺乏的男性，可考慮睪固酮補充治療（需先評估風險）。'
+                        ]
+                    },
+                    {
+                        heading: '4. 藥物治療（Off-label）',
+                        paragraphs: [
+                            '目前沒有 FDA 核准專用藥物，但臨床上偶會嘗試：',
+                            '- **多巴胺促效劑**：Bupropion、Amantadine、Apomorphine（增加性動機與反射）',
+                            '- **α-交感神經促效劑**：Midodrine、Ephedrine（促進射精反射）',
+                            '- **PDE5 抑制劑**（如 sildenafil）：主要改善勃起功能，間接促進性自信與射精',
+                            '- 局部刺激（震動刺激器，尤其對神經病變患者）'
+                        ]
+                    },
+                    {
+                        heading: '5. 神經或器質性問題處理',
+                        paragraphs: [
+                            '- **糖尿病或神經病變**：控制血糖、物理治療、神經調節。',
+                            '- **脊髓損傷**：可考慮震動刺激（Penile Vibratory Stimulation, PVS）或電刺激（Electroejaculation）。',
+                            '- **泌尿道手術後神經損傷**：需專科評估復原可能性。'
+                        ]
+                    },
+                    {
+                        heading: '6. 生活與伴侶關係調整',
+                        paragraphs: [
+                            '- 適度運動、減少酒精、改善睡眠。',
+                            '- 伴侶間坦誠溝通，避免性行為壓力過高。'
+                        ]
+                    },
+                    {
+                        heading: '📌 重點',
+                        paragraphs: [
+                            '治療前找出原因，因為延遲射精有時是可逆的藥物副作用或荷爾蒙不足造成的；若是長期慢性或心理因素，則需要心理＋性治療並配合藥物輔助。'
+                        ]
+                    }
+                ]
+            },
+            prevalence: {
+                title: '性功能障礙類型佔比',
+                sections: [
+                    {
+                        heading: '勃起功能障礙 (Erectile Dysfunction, ED)',
+                        paragraphs: [
+                            '**ED 是最常見的男性性功能障礙之一。** 儘管盛行率隨年齡大幅增加，在40歲以上男性中，ED的盛行率通常高於其他兩種類型。許多研究顯示，ED的盛行率通常與PE不相上下，甚至更高。'
+                        ]
+                    },
+                    {
+                        heading: '早洩 (Premature Ejaculation, PE)',
+                        paragraphs: [
+                            '**PE 也是非常普遍的性功能障礙。** 在一些研究中，特別是針對較年輕或一般人口的調查，PE的盛行率甚至被認為是最高的。許多報告指出，有大約 **20% 到 30%** 的男性曾為此感到困擾。'
+                        ]
+                    },
+                    {
+                        heading: '遲射 (Delayed Ejaculation, DE)',
+                        paragraphs: [
+                            '**DE 的盛行率相對較低。** 綜合各國研究，DE在男性性功能障礙中的佔比遠低於ED和PE，盛行率通常在 **1% 到 4%** 之間。然而，由於男性較不常主動尋求此類問題的協助，實際情況可能被低估。'
+                        ]
+                    },
+                    {
+                        heading: '總結',
+                        paragraphs: [
+                            '雖然很難給出一個確切的百分比，因為許多男性可能會同時患有不只一種性功能障礙，但大致上的佔比排序為：',
+                            '**早洩 (PE) ≈ 勃起功能障礙 (ED) > 遲射 (DE)**'
+                        ]
+                    }
+                ]
+            }
+        };
+
+        /**
+         * 顯示指定內容的資訊
+         * @param {string} type - 內容類型，'pe'、'de' 或 'prevalence'
+         */
+        function displayInfo(type) {
+            // 獲取對應的標題和內容區塊
+            const { title, sections, dapoxetineSection } = content[type];
+            
+            // 移除舊的背景顏色類別
+            infoBox.classList.remove('hidden', 'bg-rose-100', 'bg-sky-100', 'bg-emerald-100', 'bg-purple-100');
+            
+            // 根據按鈕類型新增對應的顏色
+            if (type === 'pe') {
+                infoBox.classList.add('bg-sky-100');
+            } else if (type === 'de') {
+                infoBox.classList.add('bg-emerald-100');
+            } else if (type === 'prevalence') {
+                infoBox.classList.add('bg-purple-100');
+            }
+            
+            // 更新標題
+            infoTitle.textContent = title;
+            
+            // 清空舊的內容
+            infoContent.innerHTML = '';
+            
+            // 創建並添加新的內容區塊
+            sections.forEach(section => {
+                // 創建標題
+                const heading = document.createElement('h3');
+                heading.className = 'text-xl font-semibold text-gray-700 mt-4 mb-2';
+                heading.textContent = section.heading;
+                infoContent.appendChild(heading);
+
+                // 創建段落
+                section.paragraphs.forEach(pText => {
+                    const p = document.createElement('p');
+                    p.className = 'text-gray-600';
+                    // 檢查是否為達泊西丁相關文字
+                    const isDapoxetineParagraph = pText.includes('Dapoxetine（達泊西丁）');
+                    
+                    if (isDapoxetineParagraph) {
+                        p.innerHTML = pText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                        infoContent.appendChild(p);
+
+                        // 創建並插入「了解更多」按鈕
+                        const dapoxetineButton = document.createElement('button');
+                        dapoxetineButton.id = 'dapoxetine-toggle-button';
+                        dapoxetineButton.className = 'mt-2 bg-orange-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-orange-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2';
+                        dapoxetineButton.textContent = dapoxetineSection.isExpanded ? '收起' : '了解更多';
+                        infoContent.appendChild(dapoxetineButton);
+
+                        const dapoxetineDetails = document.createElement('div');
+                        dapoxetineDetails.id = 'dapoxetine-details-container';
+                        dapoxetineDetails.className = dapoxetineSection.isExpanded ? 'mt-6 p-4 rounded-lg bg-orange-100 shadow-inner' : 'hidden mt-6 p-4 rounded-lg bg-orange-100 shadow-inner';
+                        infoContent.appendChild(dapoxetineDetails);
+                        
+                        // 點擊按鈕顯示/隱藏達泊西丁資訊
+                        dapoxetineButton.addEventListener('click', () => {
+                            dapoxetineSection.isExpanded = !dapoxetineSection.isExpanded;
+                            // 如果是展開狀態，則填充內容
+                            if (dapoxetineSection.isExpanded) {
+                                dapoxetineDetails.innerHTML = '';
+                                dapoxetineSection.subSections.forEach(subSection => {
+                                    const subHeading = document.createElement('h4');
+                                    subHeading.className = 'text-lg font-semibold text-gray-700 mt-2 mb-1';
+                                    subHeading.textContent = subSection.heading;
+                                    dapoxetineDetails.appendChild(subHeading);
+
+                                    subSection.paragraphs.forEach(subPText => {
+                                        const subP = document.createElement('p');
+                                        subP.className = 'text-gray-600';
+                                        subP.innerHTML = subPText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace('- ', '&#x2022; ');
+                                        dapoxetineDetails.appendChild(subP);
+                                    });
+
+                                    if (subSection.images && subSection.images.length > 0) {
+                                        const imageContainer = document.createElement('div');
+                                        imageContainer.className = 'flex flex-col space-y-4 items-center mt-4';
+                                        subSection.images.forEach(imgData => {
+                                            const img = document.createElement('img');
+                                            img.src = imgData.url;
+                                            img.alt = imgData.alt;
+                                            img.className = 'rounded-lg shadow-md max-w-full h-auto';
+                                            img.onerror = function() {
+                                                this.onerror = null;
+                                                this.src = 'https://placehold.co/600x400/CCCCCC/000000?text=圖片載入失敗';
+                                            };
+                                            imageContainer.appendChild(img);
+                                        });
+                                        dapoxetineDetails.appendChild(imageContainer);
+                                    }
+                                });
+                                dapoxetineDetails.classList.remove('hidden');
+                                dapoxetineButton.textContent = '收起';
+                            } else {
+                                dapoxetineDetails.classList.add('hidden');
+                                dapoxetineButton.textContent = '了解更多';
+                            }
+                        });
+
+                    } else {
+                        // 處理其他一般段落
+                        if (pText.includes('📌')) {
+                            p.innerHTML = pText.replace('📌', '<span class="text-xl mr-1">&#x1F4CD;</span>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                        } else if (pText.includes('💡')) {
+                            p.innerHTML = pText.replace('💡', '<span class="text-xl mr-1">&#x1F4A1;</span>');
+                        } else if (pText.startsWith('> ')) {
+                            p.innerHTML = pText.replace('> ', '<em>') + '</em>'; // 斜體
+                        } else if (pText.startsWith('- ')) {
+                            p.innerHTML = pText.replace('- ', '&#x2022; ').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                            p.className += ' pl-4'; // 模擬列表縮排
+                        } else {
+                            p.innerHTML = pText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                        }
+                        infoContent.appendChild(p);
+                    }
+                });
+            });
+
+            // 顯示資訊框
+            infoBox.classList.remove('hidden');
+        }
+        
+        // 初始化 dapoxetineSection 狀態
+        content.pe.dapoxetineSection.isExpanded = false;
+
+        // 為按鈕添加點擊事件監聽器
+        peButton.addEventListener('click', () => displayInfo('pe'));
+        deButton.addEventListener('click', () => displayInfo('de'));
+        prevalenceButton.addEventListener('click', () => displayInfo('prevalence'));
+    </script>
+</body>
+</html>
+
                 </div>
                 <div class="p-3">
                     <p class="font-semibold text-emerald-600 mb-1">遲洩 (DE)</p>
